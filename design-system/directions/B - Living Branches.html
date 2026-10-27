@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Direction B · Living Branches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f5ef;--card:#fff;--soft:#ebeee3;--line:#dfe2d6;--ink:#16211b;--ink-2:#3e4a42;--ink-3:#6b766e;--green:#2f5d46;--green-2:#dbe8dc;--sun:#e8a33d;--clay:#c8674a;--sky:#4f7fa8;--plum:#7a5a8c;--disp:"Bricolage Grotesque",system-ui,sans-serif;--sans:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);padding:48px clamp(20px,5vw,72px)}
+a{color:var(--green)}a:hover{color:var(--ink)}
+.wrap{max-width:1160px;margin:0 auto;display:grid;gap:56px}
+.eyebrow{font:600 13px/1 var(--sans);color:var(--green)}
+h1{font:700 64px/1 var(--disp);letter-spacing:-.03em}
+.lede{max-width:620px;color:var(--ink-2);font-size:18px;text-wrap:pretty}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:56px;align-items:start}@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.sec{display:grid;gap:18px;background:var(--card);border-radius:24px;padding:24px}
+.lab{font:600 13px/1 var(--sans);color:var(--ink-3)}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px}.sw div{display:grid;gap:4px;font-size:12px;color:var(--ink-3)}.sw i{height:56px;border-radius:14px}.sw b{font-weight:600;color:var(--ink)}
+.t1{font:700 40px/1.05 var(--disp);letter-spacing:-.02em}.t2{font:500 24px/1.2 var(--disp)}.t3{color:var(--ink-2);max-width:520px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{font:600 16px/1 var(--sans);padding:15px 22px;border-radius:999px;border:0;background:var(--green);color:#fff;min-height:48px}.btn.s{background:var(--green-2);color:var(--green)}.btn.g{background:transparent;color:var(--green)}
+.chip{font:500 14px/1 var(--sans);padding:9px 14px;border-radius:999px;background:var(--soft);color:var(--ink-2);display:flex;gap:8px;align-items:center}.dot{width:8px;height:8px;border-radius:50%}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:600 14px var(--sans);color:#fff;border:3px solid #fff}
+.stack{display:flex}.stack .av{margin-left:-10px}.stack .av:first-child{margin-left:0}
+.phone{width:390px;max-width:100%;border-radius:36px;background:var(--bg);overflow:hidden;box-shadow:0 2px 6px rgba(22,33,27,.06),0 20px 50px rgba(22,33,27,.12);border:8px solid #fff}
+.ph-top{display:flex;justify-content:space-between;align-items:center;padding:16px 18px}
+.word{font:700 24px/1 var(--disp);letter-spacing:-.03em;color:var(--green)}
+.pcard{margin:0 14px;background:#fff;border-radius:24px;padding:20px;display:grid;gap:14px}
+.who{display:flex;gap:14px;align-items:center}
+.ring{width:76px;height:76px;border-radius:50%;padding:3px;background:conic-gradient(var(--clay) 0 50%,var(--sky) 0)}.ring div{width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:var(--soft);display:grid;place-items:center;font:700 22px var(--disp);color:var(--green)}
+.name{font:700 24px/1.1 var(--disp);letter-spacing:-.02em}.dates{color:var(--ink-3);font-size:15px}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.quick div{background:var(--soft);border-radius:16px;padding:12px 6px;text-align:center;font:500 13px var(--sans);color:var(--ink-2)}
+.ped{padding:16px 14px;display:grid;gap:10px}.pr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pc{background:#fff;border-radius:18px;padding:12px;display:flex;gap:10px;align-items:center}.pc .av{width:34px;height:34px;font-size:12px;border-width:0}.pc b{display:block;font:600 15px/1.2 var(--sans)}.pc small{color:var(--ink-3);font-size:13px}
+.nav{margin:6px 14px 14px;background:var(--ink);border-radius:999px;display:grid;grid-template-columns:repeat(4,1fr);padding:6px}.nav div{padding:12px 0;text-align:center;font:600 13px var(--sans);color:#b9c3bb;border-radius:999px}.nav .on{background:#fff;color:var(--ink)}
+</style></head><body>
+<div class="wrap">
+<header style="display:grid;gap:18px"><div class="eyebrow">Direction B</div><h1>Living Branches</h1><p class="lede">Friendly and tactile, built for relatives who rarely use family-history software. Large touch targets, pill controls, and a colour per family line so you always know which branch you are in. References: Refero's "Kids &amp; family product" and Wise-style soft greens, Dribbble family-tree app concepts with rounded person cards.</p></header>
+<div class="grid">
+<div style="display:grid;gap:20px">
+<section class="sec"><div class="lab">Palette · base + branch colours</div><div class="sw">
+<div><i style="background:var(--bg);border:1px solid var(--line)"></i><b>Meadow</b>#F6F5EF</div><div><i style="background:var(--soft)"></i><b>Sage mist</b>#EBEEE3</div><div><i style="background:var(--green)"></i><b>Evergreen</b>#2F5D46</div><div><i style="background:var(--ink)"></i><b>Bark</b>#16211B</div><div><i style="background:var(--clay)"></i><b>Clay line</b>#C8674A</div><div><i style="background:var(--sky)"></i><b>Sky line</b>#4F7FA8</div><div><i style="background:var(--sun)"></i><b>Sun line</b>#E8A33D</div><div><i style="background:var(--plum)"></i><b>Plum line</b>#7A5A8C</div>
+</div></section>
+<section class="sec"><div class="lab">Type · Bricolage Grotesque + Figtree</div><div class="t1">Margaret Ellen Hale</div><div class="t2">The Hale family of County Cork</div><p class="t3">Born in Cork in 1921, Margaret emigrated to Boston with her sister in 1947. Body copy is Figtree at 16px minimum on mobile.</p></section>
+<section class="sec"><div class="lab">Controls</div><div class="row"><button class="btn">Add a relative</button><button class="btn s">Upload photo</button><button class="btn g">View tree</button></div><div class="row"><span class="chip"><i class="dot" style="background:var(--clay)"></i>Hale line</span><span class="chip"><i class="dot" style="background:var(--sky)"></i>O'Connell line</span><span class="chip">Cork, Ireland</span><div class="stack" style="margin-left:6px"><div class="av" style="background:var(--clay)">RH</div><div class="av" style="background:var(--sky)">JO</div><div class="av" style="background:var(--plum)">MB</div></div></div></section>
+<section class="sec"><div class="lab">Character</div><p class="t3">Soft 16–24px corners, white cards on a warm green-grey ground, gentle shadows. Every person avatar wears a ring split by the colours of the lines they descend from. Springy 220ms transitions.</p></section>
+</div>
+<div class="phone">
+<div class="ph-top"><span class="word">origine</span><div class="stack"><div class="av" style="background:var(--clay);width:34px;height:34px;font-size:12px">RH</div><div class="av" style="background:var(--sky);width:34px;height:34px;font-size:12px">JO</div></div></div>
+<div class="pcard"><div class="who"><div class="ring"><div>MH</div></div><div><div class="name">Margaret Ellen Hale</div><div class="dates">1921 – 2009 · Cork → Boston</div></div></div>
+<div class="quick"><div>12 photos</div><div>3 stories</div><div>5 places</div></div>
+<button class="btn" style="width:100%">Add to Margaret's story</button></div>
+<div class="ped"><div class="lab" style="padding-left:4px">Parents</div><div class="pr"><div class="pc"><div class="av" style="background:var(--clay)">TH</div><div><b>Thomas Hale</b><small>1890 – 1962</small></div></div><div class="pc"><div class="av" style="background:var(--sky)">BO</div><div><b>Bridget O'C.</b><small>1894 – 1971</small></div></div></div></div>
+<div class="nav"><div class="on">Tree</div><div>People</div><div>Map</div><div>Stories</div></div>
+</div>
+</div></div></body></html>

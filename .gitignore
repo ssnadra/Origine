@@ -1,0 +1,5 @@
+.playwright-mcp/
+
+# Full-resolution family photo originals from the design-system export (they keep camera EXIF data).
+# The repo is public; the UI kit uses the downscaled copies in design-system/assets/sample-photos/.
+design-system/uploads/*.JPG

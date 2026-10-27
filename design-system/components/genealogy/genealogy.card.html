@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" viewport="700x720" name="Genealogy" subtitle="Family chart, person node, rows, events, activity, photos" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.col{display:grid;gap:16px}.lab{font:500 11px/1 var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { FamilyChart, PersonRow, EventRow, ActivityItem, PhotoTile } = window.OrigineDesignSystem_f2a82e;
+const { useState } = React;
+function Demo(){
+const people={
+m:{id:'m',name:'Margaret Ellen Hale',born:'1921',died:'2009',father:'t',mother:'b',spouse:'p',children:['r','j']},
+t:{id:'t',name:'Thomas Hale',born:'1890',died:'1962',father:'w'},
+b:{id:'b',name:"Bridget O'Connell",born:'1894',died:'1971',father:'d',mother:'k'},
+w:{id:'w',name:'William Hale',born:'1858',died:'1931'},
+d:{id:'d',name:"Daniel O'Connell",born:'1861',died:'1920'},
+k:{id:'k',name:'Kathleen Ryan',born:'1866',died:'1944'},
+n:{id:'n',name:'Nora Hale',born:'1924',died:'1998',father:'t',mother:'b'},
+p:{id:'p',name:'Patrick Byrne',born:'1919',died:'1990'},
+r:{id:'r',name:'Ruth Byrne Hale',born:'1952',living:true,children:['mi']},
+j:{id:'j',name:'James Byrne',born:'1955',living:true},
+mi:{id:'mi',name:'Michael Byrne',born:'1974',living:true,src:'../../assets/sample-photos/125_0978.jpg'}};
+const [focus,setFocus]=useState('m');
+return <div className="col">
+<FamilyChart people={people} focusId={focus} onFocus={setFocus} defaultDegree={1} onAdd={()=>{}} height={360}/>
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:28}}>
+<div><PersonRow person={people.t} relation="Father" onClick={()=>{}}/><EventRow year="1921" title="Born" place="Cork, Ireland" icon="baby"/><EventRow year="1947" title="Emigrated to Boston" place="Cobh → Boston" icon="ship" last/></div>
+<div><ActivityItem who={{name:'Ruth Hale'}} action="added 4 photos to" target="Margaret Hale" time="2 days ago" style={{paddingTop:0}}/><div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:10,marginTop:12}}><PhotoTile src="../../assets/sample-photos/125_0987.jpg" people={3}/><PhotoTile src="../../assets/sample-photos/125_0974.jpg"/><PhotoTile/></div></div>
+</div></div>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>
