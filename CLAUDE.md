@@ -11,3 +11,7 @@ Uses the five default triage labels (`needs-triage`, `needs-info`, `ready-for-ag
 ### Domain docs
 
 Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
+### Browser
+
+Playwright MCP (`mcp__playwright__*`) drives Chromium for checking pages. See `docs/agents/browser.md`.
