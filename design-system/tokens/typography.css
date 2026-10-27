@@ -1,0 +1,16 @@
+:root{
+--font-serif:"Literata",Georgia,"Times New Roman",serif;
+--font-sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+--font-display:var(--font-serif);--font-body:var(--font-sans);
+--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;
+/* Scale: serif for names & headings, sans for everything else. Serif never below 400 for legibility. */
+--text-display:56px;--leading-display:1.02;--tracking-display:-0.015em;
+--text-h1:40px;--leading-h1:1.08;--tracking-h1:-0.015em;
+--text-h2:30px;--leading-h2:1.12;--tracking-h2:-0.01em;
+--text-h3:22px;--leading-h3:1.25;--tracking-h3:-0.005em;
+--text-body-lg:18px;--leading-body-lg:1.55;
+--text-body:16px;--leading-body:1.55;
+--text-small:14px;--leading-small:1.45;
+--text-caption:12px;--leading-caption:1.35;
+--text-eyebrow:12px;--tracking-eyebrow:0.12em;
+}

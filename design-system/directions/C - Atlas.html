@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Direction C · Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f2;--card:#fdfdfb;--line:#d9dcd4;--ink:#14213d;--ink-2:#3b4660;--ink-3:#6d7487;--ochre:#c98a1b;--ochre-2:#f6ead2;--sea:#3d6f73;--sea-2:#dde9e8;--sans:"Familjen Grotesk",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);padding:48px clamp(20px,5vw,72px)}
+a{color:var(--sea)}a:hover{color:var(--ink)}
+.wrap{max-width:1160px;margin:0 auto;display:grid;gap:56px}
+.eyebrow,.lab{font:500 12px/1 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3)}
+h1{font:600 64px/1 var(--sans);letter-spacing:-.035em}
+.lede{max-width:620px;color:var(--ink-2);font-size:18px;text-wrap:pretty}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:56px;align-items:start}@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.sec{display:grid;gap:18px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:22px}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}.sw div{display:grid;gap:4px;font:12px var(--mono);color:var(--ink-3);background:var(--card);padding:0 0 10px}.sw i{height:56px;margin-bottom:6px}.sw b,.sw span{padding:0 10px}.sw b{font:600 13px var(--sans);color:var(--ink)}
+.t1{font:600 40px/1.05 var(--sans);letter-spacing:-.03em}.t2{font:500 22px/1.25 var(--sans);letter-spacing:-.01em}.t3{color:var(--ink-2);max-width:520px}.t4{font:400 13px/1.4 var(--mono);color:var(--ink-3)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{font:600 15px/1 var(--sans);padding:14px 18px;border-radius:8px;border:1px solid var(--ink);background:var(--ink);color:#fff;min-height:46px}.btn.s{background:var(--card);color:var(--ink);border-color:var(--line)}.btn.g{background:transparent;border-color:transparent;color:var(--sea)}
+.pin{font:500 12px/1 var(--mono);padding:7px 9px;border-radius:6px;border:1px solid var(--line);color:var(--ink-2);background:var(--card);display:flex;gap:6px;align-items:center}.pin i{width:8px;height:8px;border-radius:2px;background:var(--ochre)}
+.av{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;font:600 13px var(--sans);color:var(--ink);border:2px solid var(--card)}
+.stack{display:flex}.stack .av{margin-left:-6px}.stack .av:first-child{margin-left:0}
+.phone{width:390px;max-width:100%;border:1px solid var(--line);border-radius:28px;background:var(--bg);overflow:hidden;box-shadow:0 1px 0 var(--line),0 16px 40px rgba(20,33,61,.10)}
+.ph-top{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:var(--card);border-bottom:1px solid var(--line)}
+.word{font:700 21px/1 var(--sans);letter-spacing:-.03em}
+.map{height:150px;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/22px 22px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/22px 22px,var(--sea-2);position:relative;border-bottom:1px solid var(--line)}
+.map .p{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--ochre);border:2px solid #fff;box-shadow:0 0 0 1px var(--ink)}
+.map .lbl{position:absolute;font:500 11px var(--mono);background:var(--card);border:1px solid var(--line);padding:3px 6px;border-radius:4px}
+.body{padding:18px;display:grid;gap:14px}
+.name{font:600 28px/1.05 var(--sans);letter-spacing:-.03em}
+.tl{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;background:var(--card)}.tl div{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:15px}.tl div:last-child{border:0}.tl b{font:500 13px var(--mono);color:var(--ochre);font-weight:500;padding-top:2px}
+.nav{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);background:var(--card)}.nav div{padding:14px 0 18px;text-align:center;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3)}.nav .on{color:var(--ink)}
+</style></head><body>
+<div class="wrap">
+<header style="display:grid;gap:18px"><div class="eyebrow">Direction C</div><h1>Atlas</h1><p class="lede">Family history as a record of places and dates. A clean, cool, cartographic system: navy ink, a sea-green working colour and ochre map pins. Dates and places are set in a monospace so they scan like a ledger. References: Refero's blueprint and research-notebook styles (Ui, Inthememory, Sprig) and Gramps Web's map and timeline views, simplified.</p></header>
+<div class="grid">
+<div style="display:grid;gap:20px">
+<section class="sec"><div class="lab">Palette</div><div class="sw">
+<div><i style="background:var(--bg)"></i><b>Survey</b><span>#F4F5F2</span></div><div><i style="background:var(--sea-2)"></i><b>Shallows</b><span>#DDE9E8</span></div><div><i style="background:var(--line)"></i><b>Grid</b><span>#D9DCD4</span></div><div><i style="background:var(--sea)"></i><b>Sea</b><span>#3D6F73</span></div><div><i style="background:var(--ochre)"></i><b>Ochre pin</b><span>#C98A1B</span></div><div><i style="background:var(--ink)"></i><b>Navy ink</b><span>#14213D</span></div>
+</div></section>
+<section class="sec"><div class="lab">Type · Familjen Grotesk + IBM Plex Mono</div><div class="t1">Margaret Ellen Hale</div><div class="t2">The Hale family of County Cork</div><p class="t3">Born in Cork in 1921, Margaret emigrated to Boston with her sister in 1947. Familjen Grotesk ("the family" in Swedish) carries names and body copy.</p><div class="t4">1921-03-14 · Cork, IE → Boston, US</div></section>
+<section class="sec"><div class="lab">Controls</div><div class="row"><button class="btn">Add a relative</button><button class="btn s">Upload photo</button><button class="btn g">Open map</button></div><div class="row"><span class="pin"><i></i>Cork, IE</span><span class="pin"><i style="background:var(--sea)"></i>Boston, US</span><span class="pin">Gen. 3</span><div class="stack" style="margin-left:6px"><div class="av" style="background:var(--ochre-2)">RH</div><div class="av" style="background:var(--sea-2)">JO</div><div class="av" style="background:#e3e5ee">MB</div></div></div></section>
+<section class="sec"><div class="lab">Character</div><p class="t3">1px grid lines and bordered cards, 8–10px corners, squared avatars like ID photos. Map and timeline are first-class surfaces. Motion is precise: 180ms ease-out slides, no bounce.</p></section>
+</div>
+<div class="phone">
+<div class="ph-top"><span class="word">Origine</span><div class="stack"><div class="av" style="background:var(--ochre-2);width:30px;height:30px;font-size:11px">RH</div><div class="av" style="background:var(--sea-2);width:30px;height:30px;font-size:11px">JO</div></div></div>
+<div class="map"><span class="p" style="left:70px;top:58px"></span><span class="lbl" style="left:88px;top:52px">Cork</span><span class="p" style="left:290px;top:92px;background:var(--sea)"></span><span class="lbl" style="left:228px;top:112px">Boston</span></div>
+<div class="body"><div style="display:grid;gap:4px"><div class="name">Margaret Ellen Hale</div><div class="t4">1921 – 2009 · Generation 3</div></div>
+<div class="tl"><div><b>1921</b>Born in Cork, Ireland</div><div><b>1947</b>Emigrated to Boston with Nora</div><div><b>1949</b>Married Patrick Byrne</div><div><b>2009</b>Died in Boston, MA</div></div></div>
+<div class="nav"><div class="on">Tree</div><div>People</div><div>Map</div><div>Stories</div></div>
+</div>
+</div></div></body></html>
